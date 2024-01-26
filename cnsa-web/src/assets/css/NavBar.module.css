@@ -1,0 +1,46 @@
+.containerNavBar {
+    background-color: var(--navy);
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;  
+
+    color: var(--ice); 
+    font-weight: 600;
+}
+
+.navBarMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBarLeft {
+    padding: 1rem;
+}
+
+.navBarLeft img {
+    width: 75%;
+}
+
+.navBarRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.navBarRight ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.navBarRight ul li {
+    cursor: pointer;
+}
+
+.navBarRight aside {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
