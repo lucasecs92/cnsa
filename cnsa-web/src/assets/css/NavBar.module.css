@@ -1,21 +1,20 @@
 .containerNavBar {
     background-color: var(--navy);
-    height: 20vh;
+    /* height: 20vh; */
     width: 100%;
     position: fixed;
     z-index: 1000;  
 
     color: var(--ice); 
     font-weight: 600;
+    padding: 0 2rem;
 }
 
 .navBarMain {
+    height: 21vh;
     display: flex;
     justify-content: space-between;
-}
-
-.navBarLeft {
-    padding: 1rem;
+    align-items: center;
 }
 
 .navBarLeft img {
@@ -25,8 +24,7 @@
 .navBarRight {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding-right: 2rem;
+    gap: 2rem;
 }
 
 .navBarRight ul {

@@ -3,6 +3,7 @@ import './assets/css/global.module.css';
 
 import NavBar from './assets/components/NavBar';
 import Footer from './assets/components/Footer';
+import Banner from './assets/components/Banner';
 
 function App() {
 
@@ -12,7 +13,11 @@ function App() {
         <header>
           <NavBar/>
         </header>
-        <main></main>
+        <main>
+          <Banner/>
+
+
+        </main>
         <footer>
           <Footer/>
         </footer>

@@ -1,5 +1,28 @@
+.containerFooter {
+    width: 100vw;
+}
+
+.mainFooter {
+    height: 100vh;
+    background-color: var(--darkNavy);
+}
 
 .secondaryFooter {
-    height: 18vh;
+    height: 15vh;
     background-color: var(--navy);
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ice);
+}
+
+.socialLogo {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialItem { 
+    color: var(--ice);
+    font-size: 1.5rem;
 }
