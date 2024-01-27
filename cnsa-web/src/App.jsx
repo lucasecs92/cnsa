@@ -16,7 +16,6 @@ function App() {
         <main>
           <Banner/>
 
-
         </main>
         <footer>
           <Footer/>

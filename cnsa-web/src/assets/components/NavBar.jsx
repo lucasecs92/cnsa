@@ -18,8 +18,8 @@ const NavBar = () => {
                             <li>Etapas de Ensino</li>
                         </ul>
                         <aside>
-                           <img src="#" alt="Inglês" />
-                           <img src="#" alt="Português" />
+                           <a href="#">🇧🇷</a>
+                           <a href="#">🇺🇸</a>
                         </aside>
                     </nav>
                 </nav>

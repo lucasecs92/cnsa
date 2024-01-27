@@ -7,7 +7,7 @@
 
     color: var(--ice); 
     font-weight: 600;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .navBarMain {
@@ -24,7 +24,7 @@
 .navBarRight {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navBarRight ul {
@@ -39,6 +39,7 @@
 
 .navBarRight aside {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+    position: relative;
+    bottom: 50px;
 }

@@ -7,5 +7,5 @@
 body {
     background-color: var(--ice);
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
