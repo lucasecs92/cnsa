@@ -1,0 +1,64 @@
+.containerSteps {
+    padding: 2rem 3rem;
+}
+
+.stepsWrap h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.stepsUl {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4.5rem 2rem 0.96rem 2rem;
+}
+
+.stepsUl li a {
+    text-decoration: none; 
+    padding: 1rem;
+    color: var(--gray);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.stepsUl li.active a {
+    background-color: var(--navy);
+    color: var(--ice); 
+}
+
+.stepsUl li a:hover {
+    background-color: transparent;
+    color: var(--navy);
+} 
+
+.line {
+    border: 1px solid var(--gray);
+    margin-bottom: 4rem;
+}
+
+.stepsInfo {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.stepsInfo img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.stepsInfo aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* gap: 1rem; */
+}
+
+.stepsInfo aside a {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--navy);
+    color: var(--ice);
+    border-radius: 5px;
+}
