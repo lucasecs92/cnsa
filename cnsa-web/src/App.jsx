@@ -6,6 +6,7 @@ import Footer from './assets/components/Footer';
 import Banner from './assets/components/Banner';
 import Steps from './assets/components/Steps';
 import WhatsAppButton from './assets/components/WhatsAppButton';
+import Diferenciais from './assets/components/Diferenciais';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
           <main>
             <Banner/>
             <Steps/>
+            <Diferenciais/>
+
             <WhatsAppButton/>
           </main>
           <footer>
