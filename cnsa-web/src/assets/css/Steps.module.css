@@ -5,6 +5,7 @@
 .stepsWrap h2 {
     font-size: 2rem;
     font-weight: 600;
+    color: var(--black);
 }
 
 .stepsUl {
@@ -27,11 +28,11 @@
     background-color: var(--navy);
     color: var(--ice); 
 }
-
+/* 
 .stepsUl li a:hover {
     background-color: transparent;
     color: var(--navy);
-} 
+}  */
 
 .line {
     border: 1px solid var(--gray);
@@ -40,7 +41,7 @@
 
 .stepsInfo {
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .stepsInfo img {
@@ -56,10 +57,17 @@
     /* gap: 1rem; */
 }
 
+.stepsInfo aside p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
 .stepsInfo aside a {
     text-decoration: none;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--navy);
     color: var(--ice);
     border-radius: 5px;
+    font-size: 0.9rem;
 }

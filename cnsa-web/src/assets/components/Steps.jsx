@@ -11,9 +11,9 @@ const Steps = () => {
     const [selectedStep, setSelectedStep] = useState(0);
 
     const steps = [
-        { name: 'Educação Infantil', image: infantil, text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus beatae atque adipisci animi provident quas voluptas, dolor quidem dolorem, architecto aut! Accusamus repellendus laboriosam, placeat hic ab dolor. Dolore eaque atque quos nihil delectus sunt voluptatem iusto repudiandae expedita. Consequatur mollitia sit id alias enim atque porro iure soluta architecto harum, corporis qui officiis excepturi. ' },
-        { name: 'Ensino Fundamental I', image: fundI, text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus beatae atque adipisci animi provident quas voluptas, dolor quidem dolorem, architecto aut! Accusamus repellendus laboriosam, placeat hic ab dolor. Dolore eaque atque quos nihil delectus sunt voluptatem iusto repudiandae expedita. Consequatur mollitia sit id alias enim atque porro iure soluta architecto harum, corporis qui officiis excepturi. ' },
-        { name: 'Ensino Fundamental II', image: fundII, text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus beatae atque adipisci animi provident quas voluptas, dolor quidem dolorem, architecto aut! Accusamus repellendus laboriosam, placeat hic ab dolor. Dolore eaque atque quos nihil delectus sunt voluptatem iusto repudiandae expedita. Consequatur mollitia sit id alias enim atque porro iure soluta architecto harum, corporis qui officiis excepturi. ' },
+        { name: 'Educação Infantil', image: infantil, text: 'Na Educação Infantil, focamos nas experiências do cotidiano da criança em seus saberes, expandindo-os para o conhecimento do mundo. Para ampliar seu repertório global, oferecemos um programa bilíngue para que a criança exercite seu protagonismo no mundo.' },
+        { name: 'Ensino Fundamental I', image: fundI, text: 'Do 1º ao 5º ano do Ensino Fundamental, tem como objetivo garantir que as crianças continuem percorrendo o caminho da aprendizagem, de modo a se desenvolverem como leitoras autônoma e capazes de construir um raciocínio matemático e lógico.' },
+        { name: 'Ensino Fundamental II', image: fundII, text: 'Do 6º ao 9º ano do Ensino Fundamental, tem como objetivo incitar os estudantes a descobrir e a compreender o mundo, formando pessoas conscientes do papel em uma sociedade solidária.' },
         { name: 'Ensino Médio', image: medio, text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus beatae atque adipisci animi provident quas voluptas, dolor quidem dolorem, architecto aut! Accusamus repellendus laboriosam, placeat hic ab dolor. Dolore eaque atque quos nihil delectus sunt voluptatem iusto repudiandae expedita. Consequatur mollitia sit id alias enim atque porro iure soluta architecto harum, corporis qui officiis excepturi. ' },
     ];
 
@@ -44,7 +44,7 @@ const Steps = () => {
                                 <aside>
                                     <p>{steps[selectedStep].text}</p>
                                     <a href="#">
-                                        <span>Saiba Mais</span>
+                                        <span>Saiba mais</span>
                                     </a>
                                 </aside>
                             </>
