@@ -1,11 +1,28 @@
 
 .mainFooter {
-    height: 60vh;
+    height: 80vh;
     background-color: var(--darkNavy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+/* 
+.logo {
+    width: 30%;
+}
+
+.address {
+    width: 30%;
+} */
+
+.locationMap iframe {
+    border-radius: 10px;
 }
 
 .secondaryFooter {
-    height: 15vh;
+    height: 13vh;
     background-color: var(--navy);
     padding: 0 3rem;
     display: flex;
