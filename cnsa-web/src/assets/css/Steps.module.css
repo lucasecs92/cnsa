@@ -28,11 +28,6 @@
     background-color: var(--navy);
     color: var(--ice); 
 }
-/* 
-.stepsUl li a:hover {
-    background-color: transparent;
-    color: var(--navy);
-}  */
 
 .line {
     border: 1px solid var(--gray);
@@ -70,4 +65,85 @@
     color: var(--ice);
     border-radius: 5px;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1120px) {
+    
+    .stepsInfo aside {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .stepsInfo aside {
+        justify-content: space-between;
+    }
+
+    .stepsInfo aside p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 892px) {
+
+    /* .stepsUl {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    } */
+
+    /* .stepsUl {
+        gap: 1rem;
+    } */
+
+    .stepsUl li a {
+        /* padding: 0; */
+        font-size: 0.9rem;
+    }
+
+    .line {
+        position: relative;
+        bottom: 0.2rem;
+    }
+
+    .stepsInfo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stepsInfo aside {
+        align-items: center;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 832px) {
+
+    .stepsUl {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stepsUl li {
+        width: 100%;
+        text-align: center;
+        background-color: var(--navy);
+        padding: 1rem;
+    }
+
+    .stepsUl li a {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .stepsInfo {
+        flex-direction: column;
+    }
+
+    .stepsInfo img {
+        width: 100%;
+        height: auto;
+    }
 }

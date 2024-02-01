@@ -23,3 +23,19 @@
     color: var(--ice);
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+
+    .secondaryFooter {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .secondaryFooter {
+        text-align: center;
+        gap: 5px;
+    }
+}
