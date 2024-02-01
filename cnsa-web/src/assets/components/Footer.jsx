@@ -16,8 +16,10 @@ const Footer = () => {
                     </figure>
                     <section className={styles.address}>
                         <h2>Nossa Unidade</h2>
-                        <p>Telefone: (62)3357-1341</p>
-                        <p>Endereço: Rua Cel Aristides Ribeiro de Freitas, 2323 - Centro, Uruaçu - GO</p>
+                        <ul>
+                            <li>Telefone: (62)3357-1341</li>
+                            <li>Endereço: Rua Cel Aristides Ribeiro de Freitas, 2323 - Centro, Uruaçu - GO</li>
+                        </ul>                        
                     </section>
                     <section className={styles.locationMap}>
                         <iframe 
