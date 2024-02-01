@@ -61,7 +61,8 @@
 .stepsInfo aside a {
     text-decoration: none;
     padding: 1rem 2rem;
-    background-color: var(--navy);
+    background-color: var(--navy);    /* gap: 1rem; */
+
     color: var(--ice);
     border-radius: 5px;
     font-size: 0.9rem;
@@ -87,19 +88,25 @@
 
 @media screen and (max-width: 892px) {
 
-    /* .stepsUl {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-    } */
+    .stepsUl {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
 
-    /* .stepsUl {
-        gap: 1rem;
-    } */
+    .stepsUl li {
+        width: 100%;
+        text-align: center;
+        /* background-color: var(--navy); */
+        padding: 1rem; 
+        cursor: pointer;
+    }
 
     .stepsUl li a {
-        /* padding: 0; */
-        font-size: 0.9rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1.5rem;
+        padding: 1rem;
     }
 
     .line {
@@ -108,42 +115,35 @@
     }
 
     .stepsInfo {
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .stepsInfo aside {
-        align-items: center;
-        gap: 1rem;
-    }
-
-}
-
-@media screen and (max-width: 832px) {
-
-    .stepsUl {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stepsUl li {
-        width: 100%;
-        text-align: center;
-        background-color: var(--navy);
-        padding: 1rem;
-    }
-
-    .stepsUl li a {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .stepsInfo {
-        flex-direction: column;
     }
 
     .stepsInfo img {
         width: 100%;
         height: auto;
     }
+
+    .stepsInfo aside {
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    .containerSteps {
+        text-align: center;
+    }
+
+    .stepsUl {
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+
+    .stepsUl li a {
+        font-size: unset;
+    }
+
 }

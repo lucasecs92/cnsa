@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import styles from '../css/Steps.module.css';
 
 import infantil from '../images/cnsa-educação-infantil.jpg';
@@ -17,6 +17,10 @@ const Steps = () => {
         { name: 'Ensino Médio', image: medio, text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus beatae atque adipisci animi provident quas voluptas, dolor quidem dolorem, architecto aut! Accusamus repellendus laboriosam, placeat hic ab dolor. Dolore eaque atque quos nihil delectus sunt voluptatem iusto repudiandae expedita. Consequatur mollitia sit id alias enim atque porro iure soluta architecto harum, corporis qui officiis excepturi. ' },
     ];
 
+    const handleClick = useCallback((index) => {
+        setSelectedStep(index);
+    }, []);
+
     return (
         <>
             <section className={styles.containerSteps}>
@@ -28,7 +32,7 @@ const Steps = () => {
                                 className={index === selectedStep ? styles['active'] : ''}
                                 onClick={(event) => {
                                 event.preventDefault();
-                                setSelectedStep(index);
+                                handleClick(index);
                             }}>
                                 <a href="">{step.name}</a>
                             </li>

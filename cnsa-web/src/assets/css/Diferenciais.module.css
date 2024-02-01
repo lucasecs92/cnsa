@@ -43,7 +43,6 @@
 
     .diferenciaisWrap aside:nth-child(n+2) {
         order: 2;
-        width: calc(50% - 1rem);
     }
 }
 
