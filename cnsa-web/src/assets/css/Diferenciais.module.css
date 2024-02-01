@@ -46,7 +46,7 @@
     }
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 883px) {
 
     .diferenciaisWrap {
         flex-direction: column;
@@ -58,7 +58,7 @@
     }
 
     .diferenciaisImg {
-        width: 100%;
+        /* width: 100%; */
         height: auto;
     }
 }

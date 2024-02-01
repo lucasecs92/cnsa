@@ -115,9 +115,11 @@
     }
 
     .stepsInfo {
-        flex-direction: column;
+        display: block;
+        /* flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center; */
     }
 
     .stepsInfo img {

@@ -9,7 +9,7 @@ const Footer = () => {
         <>
             <section className={styles.containerFooter}>
                 <section className={styles.mainFooter}>
-
+                    
                 </section>
                 <section className={styles.secondaryFooter}>
                     <p>Copyright © | 2024 - Todos os Direitos Reservados por CNSA</p>
