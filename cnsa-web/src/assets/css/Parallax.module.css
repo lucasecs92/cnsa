@@ -11,3 +11,8 @@
     background-position: center;
 }
 
+@media (max-width: 600px) {
+    .containerParallax {
+       height: 300px;
+    }
+}

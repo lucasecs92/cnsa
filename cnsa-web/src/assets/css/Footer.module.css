@@ -24,6 +24,15 @@
     gap: 0.8rem;
 }
 
+.address ul li {
+    display: flex;
+    gap: 0.8rem;
+} 
+.address ul li span {
+    font-size: 1.2rem;
+}
+
+
 /* .locationMap {
     padding: 0 3rem;
 } */
@@ -69,7 +78,7 @@
     }
 }
 
-@media screen and (max-width: 1046px) {
+@media screen and (max-width: 1142px) {
 
     .mainFooter {
         height: 100%;
@@ -84,6 +93,7 @@
 
     .locationMap iframe {
         width: 75vw;
+        margin: auto;
     }
 
     .secondaryFooter {

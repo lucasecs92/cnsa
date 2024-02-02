@@ -1,6 +1,9 @@
 import styles from '../css/Footer.module.css';
 
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { BsTelephone } from "react-icons/bs";
+import { GrLocation } from "react-icons/gr";
+
 
 import logo from '../images/cnsa-logo-preview.png';
 
@@ -28,15 +31,21 @@ const Footer = () => {
                     <section className={styles.address}>
                         <h2>Nossa Unidade</h2>
                         <ul>
-                            <li>Telefone: (62)3357-1341</li>
-                            <li>Endereço: Rua Cel Aristides Ribeiro de Freitas, 2323 - Centro, Uruaçu - GO</li>
+                            <li>
+                                <span><BsTelephone/></span>
+                                <p>Telefone: (62)3357-1341</p>
+                            </li>
+                            <li>
+                                <span><GrLocation/></span>                                  
+                                <p>Endereço: Rua Cel Aristides Ribeiro de Freitas, 2323 - Centro, Uruaçu - GO</p>
+                            </li>
                         </ul>                        
                     </section>
                     
                 </section>
 
                 <section className={styles.secondaryFooter}>
-                    <p>Copyright © | 2024 - Todos os Direitos Reservados por CNSA</p>
+                    <p>CNSA © | 2024 - Todos os Direitos Reservados</p>
                     <section className={styles.socialLogo}>
                         <a className={styles.socialItem} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/cnsa.uruacu/?locale=pt_BR"><FaFacebookF/></a>
                         <a className={styles.socialItem} target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCG8dqmSGw-oJOVuphi7zvWQ"><FaYoutube/></a>
