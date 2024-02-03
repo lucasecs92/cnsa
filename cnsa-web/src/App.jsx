@@ -19,8 +19,8 @@ function App() {
           </header>
           <main>
             <Banner/>
-            <Parallax/>
             <Steps/>
+            <Parallax/>
             <Diferenciais/>
 
             <WhatsAppButton/>
