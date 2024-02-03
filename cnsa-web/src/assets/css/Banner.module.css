@@ -1,20 +1,13 @@
-
 .sliderContainer {
     width: 100%;
     height: 100%;
-    position: relative;
+    /* position: relative; */
+    background-color: var(--ice);
 } 
 
 .sliderContainer img {
+    object-fit: cover;
     width: 100%;
     height: 100vh;
-    object-fit: cover;
-}
-/* 
-.slick-dots {
-    bottom: 25px; 
 }
 
-.slick-dots li {
-    margin: 0 5px; 
-} */
