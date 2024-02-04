@@ -1,14 +1,13 @@
 .sliderContainer {
     width: 100%;
-    height: 100%;
-    /* position: relative; */
+    height: 590px;
     background-color: var(--ice);
 } 
 
 .sliderContainer img {
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     cursor: grab;
+    margin-top: 9.8rem;
 }
-

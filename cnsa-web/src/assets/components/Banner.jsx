@@ -12,31 +12,31 @@ const Banner = () => {
     return (
         <>
             <section className={styles.sliderContainer}>
-                <Swiper
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    // navigation
-                    pagination={{ clickable: true }}
-                    // scrollbar={{ draggable: true }}
-                    loop={true}
-                    autoplay={{ 
-                        delay: 4000, 
-                        disableOnInteraction: false 
-                    }}
-                >
-                    <SwiperSlide>
-                        <img src={banner1} alt="banner logo" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={banner2} alt="banner logo 2" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={banner3} alt="banner logo 3" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={banner4} alt="banner logo 4" />
-                    </SwiperSlide>
-                </Swiper>
+                    <Swiper
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        // navigation
+                        pagination={{ clickable: true }}
+                        // scrollbar={{ draggable: true }}
+                        loop={true}
+                        autoplay={{
+                            delay: 4000,
+                            disableOnInteraction: false
+                        }}
+                    >
+                        <SwiperSlide>
+                            <img src={banner1} alt="banner logo" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={banner2} alt="banner logo 2" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={banner3} alt="banner logo 3" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={banner4} alt="banner logo 4" />
+                        </SwiperSlide>
+                    </Swiper>
             </section>
         </>
     );
