@@ -7,8 +7,8 @@
 } 
 
 .propostaWrap aside {
-    padding: 6rem 10rem 6rem 6rem;
     background-color: var(--navy);
+    padding: 6rem 10rem 6rem 6rem;
     width: 50vw;
     height: 100vh;
     border-radius: 15px;
@@ -33,10 +33,18 @@
     background-color: var(--ice);
     color: var(--black);
     text-decoration: none;
-    padding: 0.9rem 2.2rem;
+    padding: 1rem 2rem;
     border-radius: 4px;
     font-weight: 500;
     font-size: 0.9rem;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.propostaBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .propostaWrap figure {
@@ -51,4 +59,10 @@
     width: 40vw;
     height: 55vh;
     border-radius: 15px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.propostaImage:hover {
+    transform: scale(0.9); 
+    transition: transform 0.3s ease-in-out;
 }

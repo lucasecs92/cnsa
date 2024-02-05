@@ -62,12 +62,20 @@
 .stepsInfo aside a {
     text-decoration: none;
     padding: 1rem 2rem;
-    background-color: var(--navy);    /* gap: 1rem; */
-
+    background-color: var(--navy); 
     color: var(--ice);
     border-radius: 5px;
     font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.stepsInfo aside a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 @media screen and (max-width: 1120px) {
     

@@ -14,7 +14,7 @@ const Proposta = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam fugit deleniti recusandae deserunt odio tenetur facilis, voluptas, illo eius adipisci voluptatem molestias totam aut delectus eos mollitia quam quae!
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas repellendus repudiandae mollitia vero a nulla sequi blanditiis illum. 
                         </p>
-                        <a href="" className={styles.propostaBtn}>Saiba Mais</a>
+                        <a href="" className={styles.propostaBtn}>Saiba mais</a>
                     </aside>
                     <figure>
                         <img 
