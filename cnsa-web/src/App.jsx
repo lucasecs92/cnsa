@@ -8,6 +8,7 @@ import Steps from './assets/components/Steps';
 import Diferenciais from './assets/components/Diferenciais';
 import WhatsAppButton from './assets/components/WhatsAppButton';
 import Footer from './assets/components/Footer';
+import Proposta from './assets/components/Proposta';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           </header>
           <main>
             <Banner/>
+            <Proposta/>
             <Steps/>
             <Parallax/>
             <Diferenciais/>

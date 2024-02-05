@@ -1,0 +1,54 @@
+.containerProposta {
+    padding: 3rem 5rem;
+}
+ 
+.propostaWrap {
+    display: flex;
+} 
+
+.propostaWrap aside {
+    padding: 6rem 10rem 6rem 6rem;
+    background-color: var(--navy);
+    width: 50vw;
+    height: 100vh;
+    border-radius: 15px;
+    color: var(--ice);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+
+.propostaWrap aside h2 {
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.propostaWrap aside p {
+    padding: 1.5rem 0;
+}
+
+.propostaBtn {
+    background-color: var(--ice);
+    color: var(--black);
+    text-decoration: none;
+    padding: 0.9rem 2.2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.propostaWrap figure {
+    position: relative;
+}
+
+.propostaImage {
+    position: absolute; 
+    z-index: 10; 
+    top: 140px; 
+    left: -50px; 
+    width: 40vw;
+    height: 55vh;
+    border-radius: 15px;
+}

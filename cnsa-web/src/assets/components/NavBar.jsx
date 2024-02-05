@@ -9,7 +9,7 @@ const NavBar = () => {
     useEffect(() => {
         // Função para verificar se a largura da janela é menor ou igual a 790px
         const checkWindowSize = () => {
-            setIsMobile(window.innerWidth <= 790);
+            setIsMobile(window.innerWidth <= 975);
         };
 
         // Adiciona o event listener para verificar o tamanho da janela

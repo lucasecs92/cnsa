@@ -11,7 +11,7 @@
 }
 
 .navBarMain {
-    height: 22vh;
+    height: 23vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,25 +62,29 @@
     bottom: 50px;
 }
 
-@media screen and (max-width: 1095px) {
-
-    .navBarRight {
-        gap: 1.5rem;
-    }
-
-    .navBarRight ul {
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1115px) {
 
     .navBarRight ul li {
         font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1095px) {
+
+    .navBarRight {
+        gap: 1rem;
+    }
+
+    .navBarRight ul {
+        align-items: center;
+    }
+
+    .navBarRight ul li {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 975px) {
 
     .navBarRight {
         flex-direction: column-reverse;
@@ -94,6 +98,7 @@
     .navBarRight svg {
         display: block; /* Mostra o ícone do menu */
         font-size: 2rem;
+        cursor: pointer;
     }
 
     .navBarRight aside {
