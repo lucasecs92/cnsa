@@ -11,7 +11,7 @@
 }
 
 .navBarMain {
-    height: 21vh;
+    height: 22vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +29,30 @@
 
 .navBarRight ul {
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     list-style-type: none;
 }
 
 .navBarRight ul li {
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 0 1rem;
+}
+
+.navBarRight ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--black); 
+    transition: width 0.3s ease-in-out;
+}
+
+.navBarRight ul li:hover::after {
+    width: 100%;
 }
 
 .navBarRight aside {
@@ -42,4 +60,43 @@
     gap: 1rem;
     position: relative;
     bottom: 50px;
+}
+
+@media screen and (max-width: 1095px) {
+
+    .navBarRight {
+        gap: 1.5rem;
+    }
+
+    .navBarRight ul {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .navBarRight ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .navBarRight {
+        flex-direction: column-reverse;
+        padding-bottom: 3rem;
+    }
+
+    .navBarRight ul {
+        display: none; /* Oculta o menu normal */
+    }
+
+    .navBarRight svg {
+        display: block; /* Mostra o ícone do menu */
+        font-size: 2rem;
+    }
+
+    .navBarRight aside {
+        bottom: auto;
+    }
 }

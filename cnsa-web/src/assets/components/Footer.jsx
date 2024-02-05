@@ -45,7 +45,7 @@ const Footer = () => {
                 </section>
 
                 <section className={styles.secondaryFooter}>
-                    <p>CNSA © | 2024 - Todos os Direitos Reservados</p>
+                    <p>© CNSA | 2024 - Todos os Direitos Reservados</p>
                     <section className={styles.socialLogo}>
                         <a className={styles.socialItem} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/cnsa.uruacu/?locale=pt_BR"><FaFacebookF/></a>
                         <a className={styles.socialItem} target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCG8dqmSGw-oJOVuphi7zvWQ"><FaYoutube/></a>
