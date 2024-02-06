@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     /* gap: 2rem; */
-    margin: 4.5rem 2rem 0.96rem 2rem;
+    margin: 4.5rem 2rem 0.9rem 2rem;
 }
 
 .stepsUl li a {
@@ -31,7 +31,7 @@
 }
 
 .line {
-    border: 1px solid var(--gray);
+    border: 1px solid var(--lightGray);
     margin-bottom: 4rem;
 }
 
@@ -100,35 +100,41 @@
     .stepsUl {
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        /* padding: 1rem; */
+        margin: 4.5rem 2rem 0rem 2rem;
     }
 
     .stepsUl li {
         width: 100%;
         text-align: center;
-        /* background-color: var(--navy); */
         padding: 1rem; 
         cursor: pointer;
     }
-
+    
     .stepsUl li a {
         padding-top: 0;
         padding-bottom: 0;
         font-size: 1.5rem;
         padding: 1rem;
+        color: var(--gray);
+    }
+
+    .stepsUl li.active {
+        background-color: var(--navy);
+        color: var(--ice); 
+    }
+
+    .stepsUl li.active a {
+        background-color: transparent;
+        color: var(--ice); 
     }
 
     .line {
         position: relative;
-        bottom: 0.2rem;
     }
 
     .stepsInfo {
         display: block;
-        /* flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center; */
     }
 
     .stepsInfo img {

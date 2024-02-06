@@ -21,8 +21,8 @@ function App() {
           <main>
             <Banner/>
             <Proposta/>
-            <Steps/>
             <Parallax/>
+            <Steps/>
             <Diferenciais/>
 
             <WhatsAppButton/>
