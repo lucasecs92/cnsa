@@ -10,7 +10,7 @@
     background-color: var(--navy);
     padding: 6rem 10rem 6rem 6rem;
     width: 50vw;
-    height: 100vh;
+    /* height: 100vh; */
     border-radius: 15px;
     color: var(--ice);
 
@@ -18,6 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 2rem;
     }
 
 .propostaWrap aside h2 {
@@ -65,4 +66,75 @@
 .propostaImage:hover {
     transform: scale(1.1); /* (0.9)*/
     transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1190px) {
+
+    .propostaImage {
+        top: 200px;
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width: 1147px) {
+
+    .propostaWrap aside {
+        padding: 6rem 6rem 6rem 4rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    .propostaWrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .propostaWrap aside {
+        width: 70vw;
+        justify-content: space-evenly;
+    }
+
+    .propostaWrap aside p {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
+    .propostaImage {
+        position: static;
+        width: 70vw;
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 790px) {
+
+    .propostaImage {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 682px) {
+
+    .propostaWrap aside {
+        padding: 4rem;
+    }
+
+}
+@media screen and (max-width: 500px) {
+
+    .propostaWrap aside {
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .propostaWrap aside h2 {
+        text-align: center;
+    }
+    
+    .propostaWrap aside p {
+        text-align: justify;
+    }
+
 }

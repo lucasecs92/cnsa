@@ -53,6 +53,12 @@
     color: var(--ice);
 }
 
+.creator {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ice);
+}
+
 .socialLogo {
     display: flex;
     gap: 1rem;
