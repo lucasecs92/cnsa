@@ -106,3 +106,24 @@
         bottom: auto;
     }
 }
+
+@media screen and (max-width: 500px) {
+
+    .navBarMain {
+        height: 10vh;
+    }
+
+    .navBarLeft img {
+        width: 50%;
+        padding-top: 0.5rem;
+    }
+
+    .navBarRight {
+        flex-direction: row;
+        padding-bottom: 0.5rem;
+    }
+
+    .navBarRight svg {
+        font-size: 1.5rem;
+    }
+}

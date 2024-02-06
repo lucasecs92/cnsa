@@ -9,6 +9,7 @@ import Diferenciais from './assets/components/Diferenciais';
 import WhatsAppButton from './assets/components/WhatsAppButton';
 import Footer from './assets/components/Footer';
 import Proposta from './assets/components/Proposta';
+import Contato from './assets/components/Contato';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Parallax/>
             <Steps/>
             <Diferenciais/>
+            <Contato/>
 
             <WhatsAppButton/>
           </main>
