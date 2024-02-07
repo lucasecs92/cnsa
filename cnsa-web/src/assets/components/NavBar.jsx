@@ -1,11 +1,21 @@
 import { useState, useEffect } from 'react';
 import styles from '../css/NavBar.module.css';
+
 import logo from '../images/cnsa-logo-preview.png';
+
 import { SlMenu } from "react-icons/sl";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+
 
 const NavBar = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false); // Novo estado para controle do menu
 
+    // Função para abrir/fechar o menu
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+    
     useEffect(() => {
         // Função para verificar se a largura da janela é menor ou igual a 790px
         const checkWindowSize = () => {
@@ -38,12 +48,26 @@ const NavBar = () => {
                                 <li>Acontece no CNSA</li>
                             </ul>
                         )}
-                        {isMobile && <SlMenu />}
+                        {isMobile && <SlMenu onClick={toggleMenu} />}
                         <aside>
                             <a href="#">🇧🇷</a>
                             <a href="#">🇺🇸</a>
                         </aside>
                     </nav>
+
+                    {menuOpen && (
+                        <div className={styles.overlay}>
+                            <span className={styles.closeButtonContainer}>
+                            <IoIosCloseCircleOutline onClick={toggleMenu}/>
+                            </span>
+                            <ul className={styles.mobileMenu}>
+                                <li>Home</li>
+                                <li>Sobre a Escola</li>
+                                <li>Etapas de Ensino</li>
+                                <li>Acontece no CNSA</li>
+                            </ul>
+                        </div>
+                    )}
                 </nav>
             </section>
         </>
