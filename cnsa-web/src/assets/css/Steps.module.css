@@ -1,5 +1,5 @@
 .containerSteps {
-    padding: 3rem;
+    padding: 3rem 5rem;
     /* margin: 6rem 0; */
 }
 
@@ -13,7 +13,6 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
-    /* gap: 2rem; */
     margin: 4.5rem 2rem 0.9rem 2rem;
 }
 
@@ -23,6 +22,10 @@
     color: var(--gray);
     border-radius: 5px 5px 0px 0px;
     transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.stepsUl li a:hover {
+    color: var(--navy);
 }
 
 .stepsUl li.active a {
@@ -62,7 +65,7 @@
 .stepsInfo aside a {
     text-decoration: none;
     padding: 1rem 2rem;
-    background-color: var(--navy); 
+    background-color: var(--black); 
     color: var(--ice);
     border-radius: 5px;
     font-size: 0.9rem;
@@ -95,12 +98,18 @@
     }
 }
 
+@media screen and (max-width: 997px) {
+
+    .containerSteps {
+        padding: 3rem;
+    }
+}
+
 @media screen and (max-width: 892px) {
 
     .stepsUl {
         flex-direction: column;
         align-items: center;
-        /* padding: 1rem; */
         margin: 4.5rem 2rem 0rem 2rem;
     }
 

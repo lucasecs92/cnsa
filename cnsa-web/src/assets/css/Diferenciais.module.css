@@ -1,11 +1,11 @@
 .containerDiferenciais {
-    padding: 3rem;
+    padding: 3rem 5rem;
+    color: var(--black);
 }
 
 .containerDiferenciais h2 {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--black);
     padding: 3rem 0;
 }
 
@@ -21,6 +21,10 @@
     align-items: center;
     text-align: center;
     gap: 1rem;
+}
+
+.diferenciaisWrap p {
+    color: var(--gray);
 }
 
 .diferenciaisImg {
@@ -43,6 +47,13 @@
 
     .diferenciaisWrap aside:nth-child(n+2) {
         order: 2;
+    }
+}
+
+@media screen and (max-width: 997px) {
+
+    .containerDiferenciais {
+        padding: 3rem;
     }
 }
 

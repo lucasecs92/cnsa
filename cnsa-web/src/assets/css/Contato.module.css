@@ -15,9 +15,18 @@
     text-align: center;
 }
 
-.contatoTopo h2, a {
+.contatoTopo h2 {
     color: var(--black);
+}
+
+.contatoTopo a {
+    color: var(--gray);
     text-decoration: none;
+    cursor: auto
+}
+
+.contatoTopo a:hover {
+    color: var(--black);
 }
 
 .contatoForm {
@@ -31,19 +40,24 @@
     width: 40vw;
     border-radius: 5px;
     border: 0.5px solid var(--black);
+    background-color: transparent;
 }
 
 .contatoForm textarea {
-    padding: 1rem;
+    padding: 0.8rem;
     resize: none;
     border-radius: 5px;
     border: 0.5px solid var(--black);
+    background-color: transparent;
 }
 
 .submitBtn {
     width: 20%;
     padding: 0.8rem;
     margin: 0 auto;
+    background-color: var(--navy);
+    color: var(--ice);
+    font-weight: 600;
     cursor: pointer;
     border-radius: 5px;
     border: 0.5px solid var(--black);
@@ -54,4 +68,18 @@
 .submitBtn:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 990px) {
+
+    .submitBtn {
+        width: 30%;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .inputs {
+        width: auto;
+    }
 }
