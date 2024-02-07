@@ -1,7 +1,7 @@
 
 .mainFooter {
     height: 80vh;
-    background-color: var(--darkNavy);
+    background-color: var(--navy);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -10,8 +10,47 @@
     gap: 2rem;
 }
 
+.contatoTopo {
+    text-align: center;
+}
+
+.contatoTopo h2, a {
+    color: var(--black);
+    text-decoration: none;
+}
+
 .contatoForm {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.inputs {
+    padding: 0.8rem;
+    width: 40vw;
+    border-radius: 5px;
+    border: 0.5px solid var(--black);
+}
+
+.contatoForm textarea {
+    padding: 1rem;
+    resize: none;
+    border-radius: 5px;
+    border: 0.5px solid var(--black);
+}
+
+.submitBtn {
+    width: 20%;
+    padding: 0.8rem;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0.5px solid var(--black);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
