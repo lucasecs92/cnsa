@@ -17,6 +17,11 @@
     gap: 1rem;
 }
 
+.navBarPrimary aside a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 .navBarMain {
     /* height: 23vh; */
     display: flex;
@@ -173,6 +178,10 @@
     .navBarPrimary aside {
         flex-direction: column;
         gap: 0rem;
+    }
+
+    .navBarPrimary aside a {
+        font-size: 1rem;
     }
 
     .navBarMain {
