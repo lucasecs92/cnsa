@@ -27,12 +27,6 @@
 .navBarLeft img {
     width: 75%;
 }
-/* 
-.navBarRight {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-} */
 
 .navBarRight ul {
     display: flex;
@@ -44,8 +38,8 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    /* margin: 0 1rem; */
 }
+
 .navBarRight ul li::after {
     content: '';
     position: absolute;
@@ -59,13 +53,6 @@
 .navBarRight ul li:hover::after {
     width: 100%;
 }
-
-/* .navBarRight aside {
-    display: flex;
-    gap: 1rem;
-    position: relative;
-    bottom: 50px;
-} */
 
 /* Menu burguer */
 .overlay {
@@ -134,7 +121,6 @@
 
     .navBarRight ul li {
         font-size: 0.9rem;
-        /* margin: 0 0.6rem; */
     }
 }
 
@@ -147,10 +133,6 @@
     .navBarRight ul {
         align-items: center;
     }
-/* 
-    .navBarRight ul li {
-        font-size: 0.8rem;
-    } */
 }
 
 @media screen and (max-width: 975px) {
