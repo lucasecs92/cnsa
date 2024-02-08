@@ -35,6 +35,13 @@ const NavBar = () => {
     return (
         <>
             <section className={styles.containerNavBar}>
+
+                <nav className={styles.navBarPrimary}>
+                    <aside>
+                        <a href="#">🇧🇷</a>
+                        <a href="#">🇺🇸</a>
+                    </aside>
+                </nav>
                 <nav className={styles.navBarMain}>
                     <figure className={styles.navBarLeft}>
                         <img src={logo} alt="Logo CNSA" />
@@ -49,10 +56,10 @@ const NavBar = () => {
                             </ul>
                         )}
                         {isMobile && <SlMenu onClick={toggleMenu} />}
-                        <aside>
+                        {/* <aside>
                             <a href="#">🇧🇷</a>
                             <a href="#">🇺🇸</a>
-                        </aside>
+                        </aside> */}
                     </nav>
 
                     {menuOpen && (

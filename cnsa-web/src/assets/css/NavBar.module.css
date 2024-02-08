@@ -10,8 +10,15 @@
     padding: 0 3rem;
 }
 
+.navBarPrimary aside {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
 .navBarMain {
-    height: 23vh;
+    /* height: 23vh; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,16 +27,16 @@
 .navBarLeft img {
     width: 75%;
 }
-
+/* 
 .navBarRight {
     display: flex;
     align-items: center;
     gap: 2rem;
-}
+} */
 
 .navBarRight ul {
     display: flex;
-    /* gap: 2rem; */
+    gap: 2rem; 
     list-style-type: none;
 }
 
@@ -37,7 +44,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
 }
 .navBarRight ul li::after {
     content: '';
@@ -53,12 +60,12 @@
     width: 100%;
 }
 
-.navBarRight aside {
+/* .navBarRight aside {
     display: flex;
     gap: 1rem;
     position: relative;
     bottom: 50px;
-}
+} */
 
 /* Menu burguer */
 .overlay {
@@ -127,7 +134,7 @@
 
     .navBarRight ul li {
         font-size: 0.9rem;
-        margin: 0 0.6rem;
+        /* margin: 0 0.6rem; */
     }
 }
 
@@ -140,13 +147,17 @@
     .navBarRight ul {
         align-items: center;
     }
-
+/* 
     .navBarRight ul li {
         font-size: 0.8rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 975px) {
+
+    .navBarMain {
+        align-items: flex-end;
+    }
 
     .navBarRight {
         flex-direction: column-reverse;
@@ -170,8 +181,21 @@
 
 @media screen and (max-width: 500px) {
 
+    .containerNavBar {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .navBarPrimary aside {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
     .navBarMain {
         height: 10vh;
+        align-items: center;
     }
 
     .navBarLeft img {
