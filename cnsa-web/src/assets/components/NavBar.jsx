@@ -56,10 +56,6 @@ const NavBar = () => {
                             </ul>
                         )}
                         {isMobile && <SlMenu onClick={toggleMenu} />}
-                        {/* <aside>
-                            <a href="#">🇧🇷</a>
-                            <a href="#">🇺🇸</a>
-                        </aside> */}
                     </nav>
 
                     {menuOpen && (
