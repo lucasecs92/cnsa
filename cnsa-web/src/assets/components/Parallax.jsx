@@ -1,4 +1,4 @@
-import styles from '../css/Parallax.module.css';
+import styles from '../styles/Parallax.module.css';
 
 const Parallax = () => {
 

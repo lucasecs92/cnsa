@@ -1,5 +1,5 @@
-import styles from './assets/css/App.module.css';
-import './assets/css/global.module.css';
+import styles from './assets/styles/App.module.css';
+import './assets/styles/global.module.css';
 
 import NavBar from './assets/components/NavBar';
 import Banner from './assets/components/Banner';

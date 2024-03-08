@@ -1,4 +1,4 @@
-import styles from '../css/Proposta.module.css';
+import styles from '../styles/Proposta.module.css';
 
 import propostaImg from '../images/cnsa-formandos.jpg';
 

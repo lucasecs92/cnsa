@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import styles from '../css/Steps.module.css';
+import styles from '../styles/Steps.module.css';
 
 import infantil from '../images/cnsa-educação-infantil.jpg';
 import fundI from '../images/cnsa-ensino-fundamental1.jpg'; 

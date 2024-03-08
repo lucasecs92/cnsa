@@ -1,4 +1,4 @@
-import styles from '../css/Footer.module.css';
+import styles from '../styles/Footer.module.css';
 
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";

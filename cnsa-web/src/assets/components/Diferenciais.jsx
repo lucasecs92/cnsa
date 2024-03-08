@@ -1,4 +1,4 @@
-import styles from '../css/Diferenciais.module.css';
+import styles from '../styles/Diferenciais.module.css';
 
 import zoo from '../images/cnsa-zoo.png';
 import bilingue from '../images/criança-bilingue.jpg';

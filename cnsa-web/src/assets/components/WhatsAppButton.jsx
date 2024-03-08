@@ -1,4 +1,4 @@
-import styles from '../css/WhatsAppButton.module.css';
+import styles from '../styles/WhatsAppButton.module.css';
 import { useEffect, useState } from 'react';
 
 import whatsapp from '../images/whatsapp-btn.png';

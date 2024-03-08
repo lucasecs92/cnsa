@@ -1,4 +1,4 @@
-import styles from '../css/Banner.module.css';
+import styles from '../styles/Banner.module.css';
 
 import banner1 from '../images/cnsa-banner-default.png';
 import banner2 from '../images/cnsa-banner-default-2.png';

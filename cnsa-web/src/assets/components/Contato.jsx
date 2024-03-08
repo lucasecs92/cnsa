@@ -1,4 +1,4 @@
-import styles from '../css/Contato.module.css';
+import styles from '../styles/Contato.module.css';
 
 const Contato = () => {
 
