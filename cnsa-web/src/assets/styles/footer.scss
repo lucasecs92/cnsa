@@ -1,10 +1,12 @@
+@import './config';
+
 .containerFooter {
     margin-top: -50px;
 }
 
 .mainFooter {
     height: 80vh;
-    background-color: var(--navy);
+    background-color: $navy;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +15,7 @@
 }
 
 .address {
-    color: var(--ice);
+    color: $ice;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -48,18 +50,18 @@
 
 .secondaryFooter {
     height: 13vh;
-    background-color: var(--navy);
+    background-color: $navy;
     padding: 0 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--ice);
+    color: $ice;
 }
 
 .creator {
     font-weight: 600;
     text-decoration: none;
-    color: var(--ice);
+    color: $ice;
 }
 
 .socialLogo {
@@ -68,7 +70,7 @@
 }
 
 .socialItem { 
-    color: var(--ice);
+    color: $ice;
     font-size: 1.5rem;
 }
 

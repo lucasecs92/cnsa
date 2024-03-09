@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from '../styles/NavBar.module.css';
+import '../styles/navbar.scss';
 
 import logo from '../images/cnsa-logo-preview.png';
 
@@ -34,19 +34,19 @@ const NavBar = () => {
 
     return (
         <>
-            <section className={styles.containerNavBar}>
+            <section className="containerNavBar">
 
-                <nav className={styles.navBarPrimary}>
+                <nav className="navBarPrimary">
                     <aside>
                         <a href="#">🇧🇷</a>
                         <a href="#">🇺🇸</a>
                     </aside>
                 </nav>
-                <nav className={styles.navBarMain}>
-                    <figure className={styles.navBarLeft}>
+                <nav className="navBarMain">
+                    <figure className="navBarLeft">
                         <img src={logo} alt="Logo CNSA" />
                     </figure>
-                    <nav className={styles.navBarRight}>
+                    <nav className="navBarRight">
                         {!isMobile && (
                             <ul>
                                 <li>Home</li>
@@ -59,11 +59,11 @@ const NavBar = () => {
                     </nav>
 
                     {menuOpen && (
-                        <div className={styles.overlay}>
-                            <span className={styles.closeButtonContainer}>
+                        <div className="overlay">
+                            <span className="closeButtonContainer">
                             <IoIosCloseCircleOutline onClick={toggleMenu}/>
                             </span>
-                            <ul className={styles.mobileMenu}>
+                            <ul className="mobileMenu">
                                 <li>Home</li>
                                 <li>Sobre a Escola</li>
                                 <li>Etapas de Ensino</li>

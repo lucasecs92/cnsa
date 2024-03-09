@@ -1,4 +1,4 @@
-import styles from '../styles/Footer.module.css';
+import '../styles/footer.scss';
 
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
@@ -11,13 +11,13 @@ const Footer = () => {
 
     return (
         <>
-            <section className={styles.containerFooter}>
+            <section className="containerFooter">
 
-                <section className={styles.mainFooter}>
-                    <figure className={styles.logo}>
+                <section className="mainFooter">
+                    <figure className="logo">
                         <img src={logo} alt="Logo CNSA" />
                     </figure>
-                    <section className={styles.locationMap}>
+                    <section className="locationMap">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2492.143098410863!2d-49.140680730521574!3d-14.524501340468404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x934309ec32aa8027%3A0x50a20f3a994268d2!2sCol%C3%A9gio%20Nossa%20Senhora%20Aparecida!5e0!3m2!1spt-BR!2sbr!4v1706813511891!5m2!1spt-BR!2sbr&loading=async" 
                             width="400" 
@@ -28,7 +28,7 @@ const Footer = () => {
                             referrerPolicy="no-referrer-when-downgrade">
                         </iframe>   
                     </section>
-                    <section className={styles.address}>
+                    <section className="address">
                         <h2>Nossa Unidade</h2>
                         <ul>
                             <li>
@@ -44,14 +44,14 @@ const Footer = () => {
                     
                 </section>
 
-                <section className={styles.secondaryFooter}>
+                <section className="secondaryFooter">
                     <p>© CNSA | 2024 - Todos os Direitos Reservados | Feito por 
-                        <a className={styles.creator} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/lucas-eduardo-cavalcante/"> Lucasecs</a>
+                        <a className="creator" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/lucas-eduardo-cavalcante/"> Lucasecs</a>
                     </p>
-                    <section className={styles.socialLogo}>
-                        <a className={styles.socialItem} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/cnsa.uruacu/?locale=pt_BR"><FaFacebookF/></a>
-                        <a className={styles.socialItem} target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCG8dqmSGw-oJOVuphi7zvWQ"><FaYoutube/></a>
-                        <a className={styles.socialItem} target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cnsa.uruacu/?hl=pt"><FaInstagram/></a>
+                    <section className="socialLogo">
+                        <a className="socialItem" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/cnsa.uruacu/?locale=pt_BR"><FaFacebookF/></a>
+                        <a className="socialItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCG8dqmSGw-oJOVuphi7zvWQ"><FaYoutube/></a>
+                        <a className="socialItem" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cnsa.uruacu/?hl=pt"><FaInstagram/></a>
                     </section>
                 </section>
             </section>

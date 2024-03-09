@@ -1,6 +1,8 @@
+@import './config';
+
 .sliderContainer {
     width: 100%;
-    background-color: var(--ice);
+    background-color: $ice;
 } 
 
 .sliderContainer img {

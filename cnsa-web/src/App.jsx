@@ -1,5 +1,5 @@
-import styles from './assets/styles/App.module.css';
-import './assets/styles/global.module.css';
+import './assets/styles/app.css';
+import './assets/styles/_config.scss';
 
 import NavBar from './assets/components/NavBar';
 import Banner from './assets/components/Banner';
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <section className={styles.containerMain}>
+      <section className="containerMain">
           <header>
             <NavBar/>
           </header>

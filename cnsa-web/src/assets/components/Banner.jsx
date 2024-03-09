@@ -1,4 +1,4 @@
-import styles from '../styles/Banner.module.css';
+import '../styles/banner.scss';
 
 import banner1 from '../images/cnsa-banner-default.png';
 import banner2 from '../images/cnsa-banner-default-2.png';
@@ -11,7 +11,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className={styles.sliderContainer}>
+            <section className="sliderContainer">
                     <Swiper
                         spaceBetween={0}
                         slidesPerView={1}

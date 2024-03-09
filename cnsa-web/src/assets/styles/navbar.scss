@@ -1,11 +1,13 @@
+@import './config';
+
 .containerNavBar {
-    background-color: var(--navy);
+    background-color: $navy;
     /* height: 20vh; */
     width: 100%;
     position: fixed;
     z-index: 1000;  
 
-    color: var(--ice); 
+    color: $ice; 
     font-weight: 600;
     padding: 0 3rem;
 }
@@ -15,11 +17,10 @@
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-}
-
-.navBarPrimary aside a {
-    font-size: 1.2rem;
-    text-decoration: none;
+    a {
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
 }
 
 .navBarMain {
@@ -37,24 +38,32 @@
     display: flex;
     gap: 2rem; 
     list-style-type: none;
+    li {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: $black; 
+            transition: width 0.3s ease-in-out;
+        }
+    } 
 }
-
-.navBarRight ul li {
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.navBarRight ul li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--black); 
-    transition: width 0.3s ease-in-out;
-}
+// .navBarRight ul li::after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     height: 2px;
+//     width: 0;
+//     background-color: $black; 
+//     transition: width 0.3s ease-in-out;
+// }
 .navBarRight ul li:hover::after {
     width: 100%;
 }
@@ -66,46 +75,44 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--navyBg);
+    background-color: $navy-bg;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1001;
-}
-
-.overlay ul li {
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    margin: 0 1rem;
-}
-.overlay ul li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--ice); 
-    transition: width 0.3s ease-in-out;
-}
+    ul li {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        margin: 0 1rem;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: $ice; 
+            transition: width 0.3s ease-in-out;
+        }
+    }
+} 
 .overlay ul li:hover::after {
     width: 100%;
 }
 
 .mobileMenu {
-    padding:  2rem;
+    padding: 2rem;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:  1rem;
-}
-
-.mobileMenu li {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--ice);
+    gap: 1rem;
+    li {
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: $ice;
+    }
 }
 
 .closeButtonContainer {
@@ -116,11 +123,11 @@
     /* border: 1px solid var(--ice); */
     padding: 7px 10px;
     border-radius: 50%;
+    svg {
+        font-size: 35px;
+    }
 }
 
-.closeButtonContainer svg {
-    font-size: 35px;
-}
 
 @media screen and (max-width: 1155px) {
 

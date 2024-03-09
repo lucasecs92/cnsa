@@ -1,10 +1,10 @@
-import styles from '../styles/Parallax.module.css';
+import '../styles/parallax.scss';
 
 const Parallax = () => {
 
     return (
         <>
-            <section className={styles.containerParallax}>
+            <section className="containerParallax">
                 
             </section>
         </>

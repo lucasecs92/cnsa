@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import styles from '../styles/Steps.module.css';
+import '../styles/steps.scss';
 
 import infantil from '../images/cnsa-educação-infantil.jpg';
 import fundI from '../images/cnsa-ensino-fundamental1.jpg'; 
@@ -23,13 +23,13 @@ const Steps = () => {
 
     return (
         <>
-            <section className={styles.containerSteps}>
-                <section className={styles.stepsWrap}>
+            <section className="containerSteps">
+                <section className="stepsWrap">
                     <h2>Etapas de Ensino</h2>
-                    <ul className={styles.stepsUl}>
+                    <ul className="stepsUl">
                         {steps.map((step, index) => (
                             <li key={index} 
-                                className={index === selectedStep ? styles['active'] : ''}
+                                className={index === selectedStep ? ['active'] : ''}
                                 onClick={(event) => {
                                 event.preventDefault();
                                 handleClick(index);
@@ -39,9 +39,9 @@ const Steps = () => {
                         ))}
                     </ul>
 
-                    <div className={styles.line}></div>
+                    <div className="line"></div>
 
-                    <section className={styles.stepsInfo}>
+                    <section className="stepsInfo">
                         {selectedStep !== null && (
                             <>
                                 <img src={steps[selectedStep].image} alt={steps[selectedStep].name} />

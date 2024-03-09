@@ -1,4 +1,4 @@
-import styles from '../styles/WhatsAppButton.module.css';
+import '../styles/whatsapp-button.css';
 import { useEffect, useState } from 'react';
 
 import whatsapp from '../images/whatsapp-btn.png';
@@ -29,7 +29,7 @@ const WhatsAppButton = () => {
 
     return (
         <>
-            <section className={styles.containerWhatsApp} onClick={handleClick}>
+            <section className="containerWhatsApp" onClick={handleClick}>
                 <img src={image} alt="botão do WhatsApp" />
             </section>
         </>

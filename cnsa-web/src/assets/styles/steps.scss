@@ -1,3 +1,5 @@
+@import './config';
+
 .containerSteps {
     padding: 3rem 5rem;
     /* margin: 6rem 0; */
@@ -6,7 +8,7 @@
 .stepsWrap h2 {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--black);
+    color: $black;
 }
 
 .stepsUl {
@@ -19,22 +21,22 @@
 .stepsUl li a {
     text-decoration: none; 
     padding: 1rem;
-    color: var(--gray);
+    color: $gray;
     border-radius: 5px 5px 0px 0px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .stepsUl li a:hover {
-    color: var(--navy);
+    color: $navy;
 }
 
 .stepsUl li.active a {
-    background-color: var(--navy);
-    color: var(--ice); 
+    background-color: $navy;
+    color: $ice; 
 }
 
 .line {
-    border: 1px solid var(--lightGray);
+    border: 1px solid $light-gray;
     margin-bottom: 4rem;
 }
 
@@ -59,14 +61,14 @@
 .stepsInfo aside p {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--black);
+    color: $black;
 }
 
 .stepsInfo aside a {
     text-decoration: none;
     padding: 1rem 2rem;
-    background-color: var(--black); 
-    color: var(--ice);
+    background-color: $black; 
+    color: $ice;
     border-radius: 5px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -125,17 +127,17 @@
         padding-bottom: 0;
         font-size: 1.5rem;
         padding: 1rem;
-        color: var(--gray);
+        color: $gray;
     }
 
     .stepsUl li.active {
-        background-color: var(--navy);
-        color: var(--ice); 
+        background-color: $navy;
+        color: $ice; 
     }
 
     .stepsUl li.active a {
         background-color: transparent;
-        color: var(--ice); 
+        color: $ice; 
     }
 
     .line {
