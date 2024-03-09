@@ -21,24 +21,20 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    li {
+        display: flex;
+        gap: 0.8rem;
+    } 
+    span {
+        font-size: 1.2rem;
+    }
 }
-
-.address ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
-
-.address ul li {
-    display: flex;
-    gap: 0.8rem;
-} 
-.address ul li span {
-    font-size: 1.2rem;
-}
-
-
 /* .locationMap {
     padding: 0 3rem;
 } */
@@ -72,11 +68,10 @@
 .socialItem { 
     color: $ice;
     font-size: 1.5rem;
-}
-
-.socialItem:hover {
-    transform: scale(1.2); /* Aumenta o tamanho em 20% */
-    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.2); /* Aumenta o tamanho em 20% */
+        transition: transform 0.3s ease;
+    }
 }
 
 @media screen and (max-width: 1200px) {

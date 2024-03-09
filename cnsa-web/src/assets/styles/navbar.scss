@@ -156,20 +156,17 @@
     .navBarRight {
         flex-direction: column-reverse;
         padding-bottom: 3rem;
-    }
-
-    .navBarRight ul {
-        display: none; /* Oculta o menu normal */
-    }
-
-    .navBarRight svg {
-        display: block; /* Mostra o ícone do menu */
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    .navBarRight aside {
-        bottom: auto;
+        ul {
+            display: none; /* Oculta o menu normal */
+        }
+        svg {
+            display: block; /* Mostra o ícone do menu */
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        aside {
+            bottom: auto;
+        }
     }
 }
 
@@ -185,12 +182,11 @@
     .navBarPrimary aside {
         flex-direction: column;
         gap: 0rem;
+        a {
+            font-size: 1rem;
+        }
     }
-
-    .navBarPrimary aside a {
-        font-size: 1rem;
-    }
-
+    
     .navBarMain {
         height: 10vh;
         align-items: center;
@@ -204,9 +200,8 @@
     .navBarRight {
         flex-direction: row;
         padding-bottom: 0.5rem;
-    }
-
-    .navBarRight svg {
-        font-size: 1.5rem;
+        svg {
+            font-size: 1.5rem;
+        }
     }
 }
