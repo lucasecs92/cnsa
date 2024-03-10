@@ -25,7 +25,9 @@ const Footer = () => {
                             style={{border:0}} 
                             allowFullScreen 
                             loading="lazy" 
-                            referrerPolicy="no-referrer-when-downgrade">
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="CNSA localização"                        
+                        >
                         </iframe>   
                     </section>
                     <section className="address">
@@ -49,9 +51,9 @@ const Footer = () => {
                         <a className="creator" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/lucas-eduardo-cavalcante/"> Lucasecs</a>
                     </p>
                     <section className="socialLogo">
-                        <a className="socialItem" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/cnsa.uruacu/?locale=pt_BR"><FaFacebookF/></a>
-                        <a className="socialItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCG8dqmSGw-oJOVuphi7zvWQ"><FaYoutube/></a>
-                        <a className="socialItem" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cnsa.uruacu/?hl=pt"><FaInstagram/></a>
+                        <a className="socialItem" target="_blank" rel="noopener noreferrer" aria-label="Acesse o nosso Facebook" href="https://www.facebook.com/cnsa.uruacu/?locale=pt_BR"><FaFacebookF/></a>
+                        <a className="socialItem" target="_blank" rel="noopener noreferrer" aria-label="Nosso canal no YouTube" href="https://www.youtube.com/channel/UCG8dqmSGw-oJOVuphi7zvWQ"><FaYoutube/></a>
+                        <a className="socialItem" target="_blank" rel="noopener noreferrer" aria-label="Acesse o nosso Instagram" href="https://www.instagram.com/cnsa.uruacu/?hl=pt"><FaInstagram/></a>
                     </section>
                 </section>
             </section>
