@@ -40,12 +40,11 @@
 
 .navBarRight {
     padding-bottom: 0.7rem;
-}
-
-.navBarRight ul {
+    ul {
     display: flex;
     gap: 2rem; 
     list-style-type: none;
+    }
     li {
         cursor: pointer;
         position: relative;
@@ -62,8 +61,10 @@
         } &:hover::after {
             width: 100%;
         }
-    } 
+    }
 }
+
+.navBarRight 
 
 /* Menu burguer */
 .overlay {
