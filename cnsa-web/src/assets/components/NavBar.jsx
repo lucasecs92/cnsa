@@ -2,18 +2,23 @@ import { useState, useEffect } from 'react';
 import '../styles/navbar.scss';
 
 import logo from '../images/cnsa-logo-preview.png';
+import ptbrIcon from '../images/icon-pt-br.png'; 
+import usIcon from '../images/icon-us.png';
 
 import { SlMenu } from "react-icons/sl";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
+import PropTypes from 'prop-types';
 
-const NavBar = () => {
+const NavBar = ({ onMenuToggle }) => {
     const [isMobile, setIsMobile] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false); // Novo estado para controle do menu
 
     // Função para abrir/fechar o menu
     const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+        const newMenuOpen = !menuOpen;
+        setMenuOpen(newMenuOpen);
+        onMenuToggle(newMenuOpen); // Atualiza o estado no componente App
     };
     
     useEffect(() => {
@@ -38,8 +43,12 @@ const NavBar = () => {
 
                 <nav className="navBarPrimary">
                     <aside>
-                        <a href="#">🇧🇷</a>
-                        <a href="#">🇺🇸</a>
+                        <a href="#">
+                            <img src={ptbrIcon} alt="Traduzir a página para o idioma Português Brasileiro"/>
+                        </a>
+                        <a href="#">
+                            <img src={usIcon} alt="Traduzir a página para o idioma Inglês Americano" />
+                        </a>
                     </aside>
                 </nav>
                 <nav className="navBarMain">
@@ -75,6 +84,10 @@ const NavBar = () => {
             </section>
         </>
     );
+};
+
+NavBar.propTypes = {
+    onMenuToggle: PropTypes.func.isRequired,
 };
 
 export default NavBar;

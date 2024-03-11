@@ -10,14 +10,20 @@ import WhatsAppButton from './assets/components/WhatsAppButton';
 import Footer from './assets/components/Footer';
 import Proposta from './assets/components/Proposta';
 import Contato from './assets/components/Contato';
+import { useState } from 'react';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = (isOpen) => {
+     setIsMenuOpen(isOpen);
+  };
 
   return (
     <>
       <section className="containerMain">
           <header>
-            <NavBar/>
+            <NavBar onMenuToggle={handleMenuToggle}/>
           </header>
           <main>
             <Banner/>
@@ -27,7 +33,7 @@ function App() {
             <Diferenciais/>
             <Contato/>
 
-            <WhatsAppButton/>
+            {!isMenuOpen && <WhatsAppButton/>}
           </main>
           <footer>
             <Footer/>

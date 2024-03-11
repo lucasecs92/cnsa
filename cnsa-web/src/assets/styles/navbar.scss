@@ -2,7 +2,7 @@
 
 .containerNavBar {
     background-color: $navy;
-    /* height: 20vh; */
+    height: 25vh;
     width: 100%;
     position: fixed;
     z-index: 1000;  
@@ -20,6 +20,9 @@
     a {
         font-size: 1.2rem;
         text-decoration: none;
+    }
+    img {
+        width: 1.5rem;
     }
 }
 
@@ -150,13 +153,8 @@
 
 @media screen and (max-width: 975px) {
 
-    .navBarMain {
-        align-items: flex-end;
-    }
-
     .navBarRight {
         flex-direction: column-reverse;
-        padding-bottom: 3rem;
         ul {
             display: none; /* Oculta o menu normal */
         }
@@ -178,6 +176,7 @@
         flex-direction: row-reverse;
         gap: 1rem;
         padding: 0 1rem;
+        height: auto;
     }
 
     .navBarPrimary aside {
