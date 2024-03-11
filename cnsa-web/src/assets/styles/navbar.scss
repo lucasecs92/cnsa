@@ -38,6 +38,10 @@
     aspect-ratio: 27 / 9;
 }
 
+.navBarRight {
+    padding-bottom: 0.7rem;
+}
+
 .navBarRight ul {
     display: flex;
     gap: 2rem; 
@@ -72,8 +76,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1001;
-    ul li {
+    z-index: 1001; 
+}
+
+.closeButtonContainer {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    /* border: 1px solid var(--ice); */
+    padding: 7px 10px;
+    border-radius: 50%;
+    svg {
+        font-size: 35px;
+    }
+}
+
+.mobileMenu {
+    padding: 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    li {
+        font-size: 1.5rem;
+        color: $ice;
         cursor: pointer;
         position: relative;
         overflow: hidden;
@@ -87,40 +115,11 @@
             width: 0;
             background-color: $ice; 
             transition: width 0.3s ease-in-out;
+        } &:hover::after {
+            width: 100%;
         }
     }
-} 
-.overlay ul li:hover::after {
-    width: 100%;
 }
-
-.mobileMenu {
-    padding: 2rem;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    li {
-        cursor: pointer;
-        font-size: 1.5rem;
-        color: $ice;
-    }
-}
-
-.closeButtonContainer {
-    position: absolute;
-    top: 2rem;
-    right: 3rem;
-    cursor: pointer;
-    /* border: 1px solid var(--ice); */
-    padding: 7px 10px;
-    border-radius: 50%;
-    svg {
-        font-size: 35px;
-    }
-}
-
 
 @media screen and (max-width: 1155px) {
 
@@ -133,11 +132,10 @@
 
     .navBarRight {
         gap: 1rem;
-    }
-
-    .navBarRight ul {
-        align-items: center;
-    }
+        ul {
+            align-items: center;
+        }
+    } 
 }
 
 @media screen and (max-width: 975px) {
@@ -164,7 +162,7 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 1rem;
-        padding: 0 1rem;
+        padding: 0 2rem;
         height: auto;
     }
 
@@ -188,7 +186,7 @@
 
     .navBarRight {
         flex-direction: row;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0rem;
         svg {
             font-size: 1.5rem;
         }
