@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Poppins", sans-serif; */
+.containerContato {
+  padding: 3rem;
+  /* background-color: var(--darkNavy); */
+}
+
+.contatoWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contatoTopo {
+  text-align: center;
+}
+.contatoTopo h2 {
+  color: #333333;
+}
+.contatoTopo a {
+  color: #888888;
+  text-decoration: none;
+  cursor: auto;
+}
+.contatoTopo a:hover {
+  color: #333333;
+}
+
+.contatoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contatoForm textarea {
+  padding: 0.8rem;
+  resize: none;
+  border-radius: 5px;
+  border: 0.5px solid #333333;
+  background-color: transparent;
+}
+
+.inputs {
+  padding: 0.8rem;
+  width: 40vw;
+  border-radius: 5px;
+  border: 0.5px solid #333333;
+  background-color: transparent;
+}
+
+.submitBtn {
+  width: 20%;
+  padding: 0.8rem;
+  margin: 0 auto;
+  background-color: #365486;
+  color: #DCF2F1;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0.5px solid #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.submitBtn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 990px) {
+  .submitBtn {
+    width: 30%;
+  }
+}
+@media (max-width: 720px) {
+  .inputs {
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

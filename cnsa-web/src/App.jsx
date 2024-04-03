@@ -1,7 +1,7 @@
 import './assets/styles/app.css';
 import './assets/styles/_config.scss';
 
-import NavBar from './assets/components/NavBar';
+import NavBar from './assets/components/Navbar';
 import Banner from './assets/components/Banner';
 import Parallax from './assets/components/Parallax';
 import Steps from './assets/components/Steps';

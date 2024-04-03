@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Poppins", sans-serif; */
+.containerDiferenciais {
+  padding: 3rem 5rem;
+  color: #333333;
+}
+.containerDiferenciais h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3rem 0;
+}
+
+.diferenciaisWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.diferenciaisWrap aside {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.diferenciaisWrap p {
+  color: #888888;
+}
+
+.diferenciaisImg {
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1192px) {
+  .diferenciaisWrap {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .diferenciaisWrap aside:first-child {
+    order: 1;
+    width: 100%;
+  }
+  .diferenciaisWrap aside:nth-child(n+2) {
+    order: 2;
+  }
+}
+@media screen and (max-width: 997px) {
+  .containerDiferenciais {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 883px) {
+  .diferenciaisWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .diferenciaisWrap aside {
+    width: 100%;
+  }
+  .diferenciaisImg {
+    /* width: 100%; */
+    height: auto;
+  }
+}
+@media screen and (max-width: 680px) {
+  .diferenciaisImg {
+    width: 65vw;
+  }
+  .containerDiferenciais h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
