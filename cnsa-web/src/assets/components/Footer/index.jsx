@@ -5,7 +5,7 @@ import { BsTelephone } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
 
 
-import logo from '../../images/cnsa-logo-preview.png';
+import logo from '../../images/cnsa-logo-preview.webp';
 
 const Footer = () => {
 

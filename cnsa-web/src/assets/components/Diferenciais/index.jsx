@@ -1,8 +1,8 @@
 import '../Diferenciais/style.scss';
 
-import zoo from '../../images/cnsa-zoo.png';
-import bilingue from '../../images/criança-bilingue.jpg';
-import metodologia from '../../images/sas.png';
+import zoo from '../../images/cnsa-zoo.webp';
+import bilingue from '../../images/criança-bilingue.webp';
+import metodologia from '../../images/sas.webp';
 
 const Diferenciais = () => {
 

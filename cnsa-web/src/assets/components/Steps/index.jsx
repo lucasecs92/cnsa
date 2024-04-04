@@ -1,10 +1,10 @@
 import { useCallback, useState } from 'react';
 import '../Steps/style.scss';
 
-import infantil from '../../images/cnsa-educação-infantil.jpg';
-import fundI from '../../images/cnsa-ensino-fundamental1.jpg'; 
-import fundII from '../../images/cnsa-ensino-fundamental2.jpg';
-import medio from '../../images/cnsa-ensino-medio.jpg'; 
+import infantil from '../../images/cnsa-educação-infantil.webp';
+import fundI from '../../images/cnsa-ensino-fundamental1.webp'; 
+import fundII from '../../images/cnsa-ensino-fundamental2.webp';
+import medio from '../../images/cnsa-ensino-medio.webp'; 
 
 const Steps = () => {
 

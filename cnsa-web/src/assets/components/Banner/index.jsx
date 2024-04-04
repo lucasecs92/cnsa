@@ -1,9 +1,9 @@
 import '../Banner/style.scss';
 
-import banner1 from '../../images/cnsa-banner-default.png';
-import banner2 from '../../images/banner-matriculas-abertas.png';
-import banner3 from '../../images/cnsa-banner-default-2.png';
-import banner4 from '../../images/banner-volta-as-aulas.png'
+import banner1 from '../../images/cnsa-banner-default.webp';
+import banner2 from '../../images/banner-matriculas-abertas.webp';
+import banner3 from '../../images/cnsa-banner-default-2.webp';
+import banner4 from '../../images/banner-volta-as-aulas.webp';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 

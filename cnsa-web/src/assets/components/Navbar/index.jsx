@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import '../Navbar/style.scss';
 
-import logo from '../../images/cnsa-logo-preview.png';
-import ptbrIcon from '../../images/icon-pt-br.png'; 
-import usIcon from '../../images/icon-us.png';
+import logo from '../../images/cnsa-logo-preview.webp';
+import ptbrIcon from '../../images/icon-pt-br.webp'; 
+import usIcon from '../../images/icon-us.webp';
 
 import { SlMenu } from "react-icons/sl";
 import { IoIosCloseCircleOutline } from "react-icons/io";

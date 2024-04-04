@@ -1,6 +1,6 @@
 import '../Proposta/style.scss';
 
-import propostaImg from '../../images/cnsa-formandos.jpg';
+import propostaImg from '../../images/cnsa-formandos.webp';
 
 const Proposta = () => {
 
