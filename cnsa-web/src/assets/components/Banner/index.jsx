@@ -19,11 +19,10 @@ const Banner = () => {
                     pagination={{ clickable: true }}
                     // scrollbar={{ draggable: true }}
                     loop={true}
-                    /*
                     autoplay={{
                             delay: 4000,
                             disableOnInteraction: false
-                    }} */
+                    }}
                 >
                     <SwiperSlide>
                         <img src={banner1} alt="banner logo" />
