@@ -29,6 +29,15 @@ const Steps = () => {
                     <ul className="stepsUl">
                         {steps.map((step, index) => (
                             <li key={index} 
+                                onClick={(event) => {
+                                event.preventDefault();
+                                handleClick(index);
+                            }}>
+                                <a href="" className={index === selectedStep ? 'active' : ''}>{step.name}</a>
+                            </li>
+                        ))}
+                        {/* {steps.map((step, index) => (
+                            <li key={index} 
                                 className={index === selectedStep ? ['active'] : ''}
                                 onClick={(event) => {
                                 event.preventDefault();
@@ -36,7 +45,7 @@ const Steps = () => {
                             }}>
                                 <a href="">{step.name}</a>
                             </li>
-                        ))}
+                        ))} */}
                     </ul>
 
                     <div className="line"></div>

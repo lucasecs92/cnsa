@@ -16,7 +16,7 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin: 4.5rem 2rem 0.9rem 2rem;
+    margin: 4.5rem 0rem 0.9rem 0rem;
     li a {
         text-decoration: none; 
         padding: 1rem;
@@ -27,9 +27,12 @@
             color: $navy;
         }
     }
-    li.active a {
+    a.active {
         background-color: $navy;
         color: $ice;
+        &:hover {
+            color: $ice;
+        }
     }
 }
 
@@ -107,27 +110,24 @@
         align-items: center;
         margin: 4.5rem 2rem 0rem 2rem;
     }
-
+    
     .stepsUl li {
         width: 100%;
         text-align: center;
-        padding: 1rem; 
         cursor: pointer;
         a {
+            display: block;
             padding-top: 0;
             padding-bottom: 0;
             font-size: 1.5rem;
             padding: 1rem;
             color: $gray;
         }
-        li.active {
+        a.active {
             background-color: $navy;
             color: $ice; 
         }
-        li.active a {
-            background-color: transparent;
-            color: $ice; 
-        }
+        
     }
 
     .line {
