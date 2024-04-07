@@ -3,13 +3,13 @@ import './assets/styles/_config.scss';
 
 import NavBar from './assets/components/Navbar';
 import Banner from './assets/components/Banner';
+import Proposta from './assets/components/Proposta';
 import Parallax from './assets/components/Parallax';
 import Steps from './assets/components/Steps';
 import Diferenciais from './assets/components/Diferenciais';
+import Contato from './assets/components/Contato';
 import WhatsAppButton from './assets/components/WhatsAppButton';
 import Footer from './assets/components/Footer';
-import Proposta from './assets/components/Proposta';
-import Contato from './assets/components/Contato';
 import Cookies from './assets/components/Cookies'
 
 import { useState } from 'react';
