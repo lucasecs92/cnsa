@@ -70,7 +70,7 @@ const Navbar = ({ onMenuToggle }) => {
                     {menuOpen && (
                         <div className="overlay">
                             <span className="closeButtonContainer">
-                            <IoIosCloseCircleOutline onClick={toggleMenu}/>
+                                <IoIosCloseCircleOutline onClick={toggleMenu}/>
                             </span>
                             <ul className="mobileMenu">
                                 <li>Home</li>
