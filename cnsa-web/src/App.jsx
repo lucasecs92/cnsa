@@ -10,6 +10,8 @@ import WhatsAppButton from './assets/components/WhatsAppButton';
 import Footer from './assets/components/Footer';
 import Proposta from './assets/components/Proposta';
 import Contato from './assets/components/Contato';
+import Cookies from './assets/components/Cookies'
+
 import { useState } from 'react';
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
             <Diferenciais/>
             <Contato/>
 
+            <Cookies/>
             {!isMenuOpen && <WhatsAppButton/>}
           </main>
           <footer>
