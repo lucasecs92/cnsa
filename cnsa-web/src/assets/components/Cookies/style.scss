@@ -37,7 +37,27 @@
         border: none;
         border-radius: .5rem;
         box-shadow: 0 0 1rem rgb(0 0 0 / .3);
-        width: 30vw;
-        padding: 20px;
+        width: 40vw;
+        height: 80vh;
+        // padding: 20px;
+        header {
+            padding: 20px;
+            border-bottom: 1px solid $light-gray;
+        }
+        main {
+            padding: 50px;
+        }
+        footer {
+            border-top: 1px solid $light-gray;
+            text-align: end;
+            padding: 20px;
+            button {
+                padding: 10px;
+            }
+        }
     }
+}
+
+.no-scroll {
+    overflow: hidden;
 }
