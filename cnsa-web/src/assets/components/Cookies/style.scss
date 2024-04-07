@@ -39,6 +39,9 @@
         box-shadow: 0 0 1rem rgb(0 0 0 / .3);
         width: 40vw;
         height: 80vh;
+        display: flex;
+        flex-direction: column;
+        cursor: auto;
         // padding: 20px;
         header {
             padding: 20px;
@@ -46,6 +49,7 @@
         }
         main {
             padding: 50px;
+            overflow-y: auto; // Adiciona rolagem vertical quando necessário
         }
         footer {
             border-top: 1px solid $light-gray;
@@ -53,6 +57,7 @@
             padding: 20px;
             button {
                 padding: 10px;
+                cursor: pointer;
             }
         }
     }
