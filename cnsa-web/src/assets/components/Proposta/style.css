@@ -84,8 +84,7 @@
     width: 70vw;
     justify-content: space-evenly;
   }
-  .propostaWrap aside p {
-    padding: 0;
+  .propostaWrap p {
     font-size: 0.9rem;
   }
   .propostaImage {
@@ -113,11 +112,8 @@
     padding: 2rem;
     align-items: center;
   }
-  .propostaWrap aside aside h2 {
+  .propostaWrap aside h2 {
     text-align: center;
     font-size: 1.3rem;
-  }
-  .propostaWrap aside aside p {
-    text-align: justify;
   }
 }/*# sourceMappingURL=style.css.map */

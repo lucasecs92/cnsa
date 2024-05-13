@@ -15,7 +15,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin: 4.5rem 2rem 0.9rem 2rem;
+  margin: 4.5rem 0rem 0.9rem 0rem;
 }
 .stepsUl li a {
   text-decoration: none;
@@ -27,8 +27,11 @@
 .stepsUl li a:hover {
   color: #365486;
 }
-.stepsUl li.active a {
+.stepsUl a.active {
   background-color: #365486;
+  color: #DCF2F1;
+}
+.stepsUl a.active:hover {
   color: #DCF2F1;
 }
 
@@ -101,22 +104,18 @@
   .stepsUl li {
     width: 100%;
     text-align: center;
-    padding: 1rem;
     cursor: pointer;
   }
   .stepsUl li a {
+    display: block;
     padding-top: 0;
     padding-bottom: 0;
     font-size: 1.5rem;
     padding: 1rem;
     color: #888888;
   }
-  .stepsUl li li.active {
+  .stepsUl li a.active {
     background-color: #365486;
-    color: #DCF2F1;
-  }
-  .stepsUl li li.active a {
-    background-color: transparent;
     color: #DCF2F1;
   }
   .line {
