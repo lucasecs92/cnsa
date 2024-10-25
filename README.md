@@ -1,1 +1,1 @@
-<img src="./screenshot/basicchatgpt.png" width="80%">
+<img src="./screenshot/cnsauruacu.png" width="80%">
